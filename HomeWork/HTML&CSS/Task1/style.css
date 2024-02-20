@@ -1,0 +1,85 @@
+.container {
+    background-color: rgba(0,66,65,255);
+    color: rgba(249,242,246,255);
+    padding: 80px;
+    min-width: 400px;
+}
+
+.container h1 {
+    font-size: 40px;
+    min-width: 670px;
+}
+
+.article {
+    font-size: 15px;
+}
+
+.container_inner {
+    display: flex;
+    gap: 40px;
+}
+
+.text {
+    display: flex;
+    padding-top: 50px;
+}
+
+.description {
+    margin-top: 0;
+    font-size: 18px;
+    min-width: 150px;
+}
+
+.title {
+    margin-bottom: 5px;
+    min-width: 130px;
+    font-size: 18px;
+}
+
+img {
+    padding-top: 50px;
+}
+
+@media screen and (max-width: 800px){
+    .article {
+        font-size: 25px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    img {
+        padding-top: 60px;
+        width: 75px;
+        height: 75px;
+    }
+
+    .description {
+        font-size: 22px;
+    }
+
+    .text {
+        padding: 0;
+        display: grid;
+        grid-template-areas:
+            'updated author'
+            'comments published';
+        column-gap: 80px;
+    }
+
+    .author {
+        grid-area: author;
+    }
+
+    .comments {
+        grid-area: comments;
+    }
+
+    .published {
+        grid-area: published;
+    }
+
+    .updated {
+        grid-area: updated;
+    }

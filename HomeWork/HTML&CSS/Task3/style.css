@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: sans-serif;
+    font-size: 0.88rem;
+    color: black;
+    background-color: rgba(245,245,245,255);
+}
+
+img {
+    display: block;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    height: 100%;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 1.6rem;
+    min-width: 130px;
+}
+
+h4 {
+    font-weight: 400;
+    font-size: 0.87rem;
+    font-size: 19px;
+}
+
+aside .header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid rgba(202,202,202,255);
+    margin-bottom: 20px;
+}
+
+aside .email {
+    display: flex;
+    gap: 0.5rem;
+    padding: 1.5rem 3rem 1.5rem 3rem;
+}
+
+aside .email h4 {
+    padding: 1.3rem 0.3rem 0.3rem;
+}
+
+aside .email img {
+    width: 3rem;
+    height: 3rem;
+}
+
+aside {
+    height: 100%;
+}
+
+aside .logo {
+    display: flex;
+    gap: 0.5rem;
+    padding: 1.5rem 0rem 1.5rem 3rem;
+}
+
+aside .logo img {
+    width: 3rem;
+    height: 3rem;
+}
+
+aside .logo h1 {
+    padding: 0.7rem 0.3rem;
+}
+
+aside .sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    display: inline-block;
+    margin-right: 50px;
+    min-width: 270px;
+}
+
+aside .sidebar a {
+    display: flex;
+    align-items: center;
+    height: 3.7rem;
+    gap: 1rem;
+    margin-left: 4rem;
+    color: black;
+    padding: 15px 0 15px 20px;
+}
+
+aside .sidebar a:hover {
+    background-color: rgba(244,228,228,255);
+}
+
+.content {
+    display: flex;
+    padding-right: 50px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+table tr {
+  border-bottom: 1px solid rgba(202,202,202,255);
+}
+
+table tr:hover {
+    background-color: rgba(236,236,236,255);
+}
+
+table img {
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+table tbody tr td:nth-child(1) {
+    padding: 0 20px 0 20px;
+    width: 10%;
+}
+
+table tbody tr td:nth-child(2) {
+    width: 20%;
+    padding: 0 20px 0 20px;
+    min-width: 145px;
+}
+
+table tbody tr td:nth-child(3) {
+    width: 60%;
+    padding: 0 20px 0 20px;
+    min-width: 301px;
+}
+
+table tbody tr td:nth-child(4) {
+    width: 3%;
+    padding: 0 20px 0 20px;
+}
+
+table tbody tr td:nth-child(5) {
+    width: 7%;
+    min-width: 55px;
+}
+
+td {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+span {
+    color:rgba(162,166,171,255);
+}
+
+@media screen and (max-width:800px) and (min-width:550px) {
+    table tbody tr td:nth-child(2), td:nth-child(3), td:nth-child(3) span {
+        display: inline-block;
+    }
+
+    table tbody tr td:nth-child(2) {
+        padding-top: 15px;
+    }
+
+    table tbody tr td:nth-child(3) {
+        padding: 0 0 15px 20px;
+    }
+
+    table tbody tr:nth-child(3) td:nth-child(3) {
+        min-width: 50px;
+    }
+
+    table tbody tr td:nth-child(3) .dash {
+        display: none;
+    }
+
+    table tbody tr td:nth-child(1) {
+        padding-bottom: 35px;
+        padding-right: 0;
+    }
+
+    table tbody tr td:nth-child(4) {
+        padding: 0 20px 35px 0;
+    }
+
+    table tbody tr td:nth-child(5) {
+        padding-bottom: 35px;
+        padding-right: 0;
+    }
+
+    table img {
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+}
+
+@media screen and (max-width:550px) {
+    table tbody tr td:nth-child(2), td:nth-child(3), td:nth-child(3) span {
+        display: inline-block;
+    }
+
+    table tbody tr td:nth-child(2) {
+        padding: 15px 0 0 5px;
+    }
+
+    table tbody tr td:nth-child(3) {
+        padding: 0 0 15px 5px;
+        min-width: 150px;
+    }
+
+    table tbody tr td:nth-child(3) .dash {
+        display: none;
+    }
+
+    table tbody tr td:nth-child(1) {
+        padding-bottom: 35px;
+        padding-right: 0;
+    }
+
+    table tbody tr td:nth-child(4) {
+        padding: 0 20px 70px 0;
+    }
+
+    table tbody tr td:nth-child(5) {
+        padding: 10px 0 80px 0;
+    }
+
+    table img {
+        width: 1.1rem;
+        height: 1.1rem;
+    }
+
+    aside .sidebar a h4 {
+        display: none;
+    }
+
+    aside .sidebar {
+    margin-right: 10px;
+    min-width: 160px;
+    }
+}
